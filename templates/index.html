@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinithra Sadras - Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Main Section: Header -->
+    <section class="main-section">
+        <div class="header-content">
+            <!-- Left-side content with name and details -->
+            <div class="name-content">
+                <h1>Vinithra Sadras</h1>
+                
+                <!-- Animated Subtitle (letter by letter animation) -->
+                <p class="static-subtitle">Syracuse University | 
+                    <span class="animated-subtitle" id="animated-subtitle"></span>
+                </p>
+                
+                <a href="{{ url_for('static', filename='resume/resssss.pdf') }}" download class="resume-btn">Download Resume</a>
+            </div>
+    
+            <!-- Right-side Profile Picture -->
+            <div class="profile-picture">
+                <img src="{{ url_for('static', filename='images/dp_f.png') }}" alt="Vinithra Sadras" class="profile-pic">
+            </div>
+        </div>
+    
+        <!-- Navigation Links at the Bottom -->
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </nav>          
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            Hi! I'm Vinithra, a passionate software developer driven by a desire to build innovative and impactful solutions. 
+            I thrive in collaborative environments, where I can contribute to exciting projects and work with teams to solve real-world problems. 
+            I am always eager to expand my skill set, continuously learning and adapting to the latest technologies in the fast-paced software industry. 
+            My areas of interest include full-stack development, machine learning, cloud computing, and DevOps.
+        </p>
+    </section>
+
+    <!-- Experience Section -->
+<section id="experience" class="section">
+    <h2>Experience</h2>
+    <div class="experience-container">
+        <!-- Experience Card 1 -->
+        <div class="experience-card">
+            <h3>Software Developer, Accenture — Oct 2022 to Jul 2023</h3>
+            <p>
+                - Spearheaded CRUD operation optimizations, significantly improving application responsiveness and user engagement by over 20%.<br>
+                - Designed and developed RESTful APIs using Spring Boot, enhancing system interoperability and contributing to Accenture's digital transformation initiatives.<br>
+                - Led the development of a gaming application using libGDX, expanding Accenture’s portfolio into the digital entertainment domain.<br>
+                - Integrated technologies such as Java, Spring MVC, and Docker to streamline the development process, increasing team efficiency and collaboration.
+            </p>
+        </div>
+
+        <!-- Experience Card 2 -->
+        <div class="experience-card">
+            <h3>Software Developer Intern, Infochord Technologies — Aug 2021 to Dec 2021</h3>
+            <p>
+                - Improved response times and data handling for dynamic web applications, achieving up to a 30% reduction in load times.<br>
+                - Worked within an Agile team to enhance project delivery efficiency and set new benchmarks in web development practices.<br>
+                - Boosted operational efficiency and customer satisfaction by implementing new development processes and standards.
+            </p>
+        </div>
+
+        <!-- Experience Card 3 -->
+        <div class="experience-card">
+            <h3>Java Developer Intern, EPIKINDIFI — Feb 2022 to Aug 2022</h3>
+            <p>
+                - Developed key features for banking applications, improving account management and transaction security.<br>
+                - Collaborated with a diverse team of interns, leveraging different perspectives to innovate and enhance banking software products.<br>
+                - Contributed to the development of banking systems that significantly enhanced transaction handling, leading to more secure and efficient services.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-container">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+            <h3>Flight Delay Prediction</h3>
+            <p>
+                - Built a machine learning model using Python (scikit-learn, pandas) to predict flight delays based on historical data and weather conditions.<br>
+                - Achieved an accuracy of 85% by optimizing the model with hyperparameter tuning and cross-validation.<br>
+                - Deployed the model as a RESTful API on AWS Lambda, allowing seamless integration with other systems.<br>
+                - Visualized predictions using Plotly for dynamic, interactive data visualization.
+            </p>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+            <h3>Full-Stack E-commerce Web Application</h3>
+            <p>
+                - Developed a full-stack e-commerce platform using React.js, Node.js, and MongoDB.<br>
+                - Implemented user authentication with JWT, product search with Elasticsearch, and secure payment integration with Stripe API.<br>
+                - Deployed the application on AWS using Docker containers and set up CI/CD pipelines for automatic updates.<br>
+                - Enhanced user experience with responsive design and performance optimization, achieving a 95% Lighthouse performance score.
+            </p>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="project-card">
+            <h3>Sentiment Analysis of Social Media Posts</h3>
+            <p>
+                - Created a sentiment analysis tool using natural language processing (NLP) techniques to classify social media posts as positive, negative, or neutral.<br>
+                - Leveraged Python (NLTK, TensorFlow) to build the model and fine-tune it using transfer learning from pre-trained BERT models.<br>
+                - Deployed the tool as a cloud-based service on AWS EC2 with a real-time dashboard for monitoring sentiment trends.<br>
+                - Applied the tool to analyze brand sentiment for a client, providing actionable insights to improve their social media strategy.
+            </p>
+        </div>
+    </div>
+</section>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Programming Languages:</strong> Python, JavaScript, Java, SQL</li>
+            <li><strong>Frontend Development:</strong> React.js, HTML5, CSS3, Bootstrap</li>
+            <li><strong>Backend Development:</strong> Node.js, Express, RESTful APIs, Flask</li>
+            <li><strong>Databases:</strong> MongoDB, MySQL, PostgreSQL</li>
+            <li><strong>Cloud Technologies:</strong> AWS (EC2, Lambda, S3), Docker, Kubernetes</li>
+            <li><strong>DevOps & CI/CD:</strong> Jenkins, Git, GitHub, GitLab, Docker</li>
+            <li><strong>Machine Learning & AI:</strong> scikit-learn, TensorFlow, NLP (Natural Language Processing)</li>
+            <li><strong>Version Control:</strong> Git, GitHub</li>
+            <li><strong>Tools:</strong> Jira, VS Code, PyCharm</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form action="mailto:vsadras@syr.edu" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+
+        <!-- Social Media Links (LinkedIn, GitHub, Outlook) -->
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/vinithra-sadras-2a3a4421b" target="_blank">
+                <img class="icon" src="{{ url_for('static', filename='images/linkedin.jpg') }}" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/Vinithra5" target="_blank">
+                <img class="icon" src="{{ url_for('static', filename='images/github.jpg') }}" alt="GitHub">
+            </a>
+            <a href="mailto:vsadras@syr.edu">
+                <img class="icon" src="{{ url_for('static', filename='images/outlook.jpg') }}" alt="Outlook">
+            </a>
+        </div>        
+    </section>
+
+    <script>
+        // Letter-by-letter animation for "Computer Science Graduate"
+        const subtitleText = "Computer Science Graduate";
+        const subtitleContainer = document.getElementById('animated-subtitle');
+        let letterIndex = 0;
+
+        function animateLetters() {
+            if (letterIndex < subtitleText.length) {
+                subtitleContainer.innerHTML += subtitleText[letterIndex];
+                letterIndex++;
+                setTimeout(animateLetters, 100);  // Adjust the speed here
+            } else {
+                // Reset animation after completion
+                setTimeout(() => {
+                    subtitleContainer.innerHTML = '';
+                    letterIndex = 0;
+                    animateLetters();
+                }, 2000);  // Adjust the delay before resetting the animation
+            }
+        }
+        animateLetters();  // Start the animation
+    </script>
+</body>
+</html>

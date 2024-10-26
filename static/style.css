@@ -1,0 +1,200 @@
+/* General Body Style */
+body {
+    background: url('/static/images/wall.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* Main Section Background */
+.main-section {
+    background: url('/static/images/mainsec_wallpaper.jpg') no-repeat center center;
+    background-size: cover;
+    color: #3b3b3b;
+    padding: 50px;
+    text-align: left;
+    margin-bottom: 0;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0; /* Remove border radius for rectangle shape */
+}
+/* Increased specificity */
+.main-section .subtitle {
+    font-size: 3.5em !important;
+    color: #666666 !important;
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+}
+/* Resume Button */
+.resume-btn {
+    background-color: #ffd1dc;
+    color: #3b3b3b;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.resume-btn:hover {
+    background-color: #ffb6c1;
+    color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Name Styling */
+.name-content h1 {
+    font-size: 4em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+/* Soft Shadow Overlay */
+/* Profile Picture - Rectangle with Gradient Border */
+/* Profile Picture - Drop Shadow Oval */
+.profile-picture {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+.profile-pic {
+    width: 220px;
+    height: 260px; /* Taller for oval effect */
+    border-radius: 20% / 50%; /* Creates an oval */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+    background-color: transparent;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3b3b3b;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    color: #a74b8b;
+}
+
+/* Social Media Icons Styling */
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons .icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+    margin: 0 10px;
+}
+
+.social-icons .icon:hover {
+    transform: scale(1.1);
+}
+
+/* Section Styling with 5% Margin */
+.section {
+    margin: 30px 5%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Experience and Projects Inner Containers */
+.experience-container, .project-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Inner Card Styles */
+.experience-card, .project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover, .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Pink Theme for Headings */
+.section h2 {
+    color: #C2185B;
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.experience-card h3, .project-card h3 {
+    color: #E91E63;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Neutral Color for Card Content */
+.experience-card p, .project-card p {
+    color: #6D4C41;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Responsive Adjustments for Small Screens */
+@media (max-width: 768px) {
+    .experience-card, .project-card {
+        width: 100%;
+    }
+
+    .name-content h1 {
+        font-size: 2.5em;
+    }
+
+    .subtitle {
+        font-size: 1.2em !important;
+        margin-bottom: 15px !important;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        font-size: 1.2em;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+}
