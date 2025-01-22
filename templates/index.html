@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinithra Sadras - Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Main Section: Header -->
+    <header class="main-section">
+        <div class="header-content">
+            <!-- Name and Resume Section -->
+            <div class="name-content">
+                <h1>Vinithra Sadras</h1>
+                <p class="subtitle">Syracuse University | Computer Science Graduate</p>
+                <a href="{{ url_for('static', filename='resume/resssss.pdf') }}" download class="resume-btn">Download Resume</a>
+            </div>
+
+            <!-- Profile Picture -->
+            <div class="profile-picture">
+                <div class="unique-shape-wrapper">
+                    <img src="{{ url_for('static', filename='images/animatedpic.jpg') }}" alt="Vinithra Sadras" class="profile-pic">
+                </div>
+            </div>
+            
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/vinithra-sadras-2a3a4421b" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Vinithra5" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:vsadras@syr.edu">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            Hi! I'm Vinithra, a passionate software developer driven by a desire to build innovative and impactful solutions.
+            I thrive in collaborative environments, where I can contribute to exciting projects and work with teams to solve
+            real-world problems. I am always eager to expand my skill set, continuously learning and adapting to the latest
+            technologies in the fast-paced software industry. My areas of interest include full-stack development, machine
+            learning, cloud computing, and DevOps.
+        </p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="experience-container">
+            <!-- Experience Cards -->
+            <div class="experience-card">
+                <h3>Software Developer, Accenture &mdash; Oct 2022 to Jul 2023</h3>
+                <p>
+                    Spearheaded CRUD operation optimizations, improving application responsiveness and user engagement by 20%.<br>
+                    Designed and developed RESTful APIs using Spring Boot.<br>
+                    Led the development of a gaming application using libGDX.<br>
+                    Integrated technologies like Java, Spring MVC, and Docker to streamline development.
+                </p>
+            </div>
+
+            <div class="experience-card">
+                <h3>Software Developer Intern, Infochord Technologies &mdash; Aug 2021 to Dec 2021</h3>
+                <p>
+                    Improved response times for dynamic web applications, reducing load times by 30%.<br>
+                    Worked within an Agile team to enhance delivery efficiency.<br>
+                    Boosted operational efficiency by implementing new development standards.
+                </p>
+            </div>
+
+            <div class="experience-card">
+                <h3>Java Developer Intern, EPIKINDIFI &mdash; Feb 2022 to Aug 2022</h3>
+                <p>
+                    Developed key features for banking applications, enhancing account management and security.<br>
+                    Collaborated with diverse teams to innovate banking software.<br>
+                    Improved transaction handling, leading to more secure and efficient services.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <!-- Project Cards -->
+            <div class="project-card">
+                <h3>Flight Delay Prediction</h3>
+                <p>
+                    Built a machine learning model using Python to predict flight delays.<br>
+                    Achieved 85% accuracy with hyperparameter tuning and cross-validation.<br>
+                    Deployed the model as a RESTful API on AWS Lambda.<br>
+                    Visualized predictions using Plotly.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Full-Stack E-commerce Web Application</h3>
+                <p>
+                    Developed a platform using React.js, Node.js, and MongoDB.<br>
+                    Implemented JWT authentication, Elasticsearch, and Stripe API integration.<br>
+                    Deployed on AWS with Docker and set up CI/CD pipelines.<br>
+                    Achieved a 95% Lighthouse performance score.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Sentiment Analysis of Social Media Posts</h3>
+                <p>
+                    Created a sentiment analysis tool using NLP techniques.<br>
+                    Leveraged Python and fine-tuned pre-trained BERT models.<br>
+                    Deployed as a cloud-based service on AWS EC2.<br>
+                    Provided actionable insights for a client’s social media strategy.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Programming Languages:</strong> Python, JavaScript, Java, SQL</li>
+            <li><strong>Frontend Development:</strong> React.js, HTML5, CSS3, Bootstrap</li>
+            <li><strong>Backend Development:</strong> Node.js, Express, Flask, RESTful APIs</li>
+            <li><strong>Databases:</strong> MongoDB, MySQL, PostgreSQL</li>
+            <li><strong>Cloud Technologies:</strong> AWS (EC2, Lambda, S3), Docker, Kubernetes</li>
+            <li><strong>DevOps & CI/CD:</strong> Jenkins, Git, GitHub, GitLab</li>
+            <li><strong>Machine Learning & AI:</strong> scikit-learn, TensorFlow, NLP</li>
+            <li><strong>Tools:</strong> Jira, VS Code, PyCharm</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form action="mailto:vsadras@syr.edu" method="post" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Vinithra Sadras" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="vsadras@syr.edu" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+</section>
+<!-- Social Media Links -->
+<div class="social-icons">
+    <a href="mailto:vsadras@syr.edu" target="_blank">
+        <img src="{{ url_for('static', filename='images/outlook.jpg') }}" alt="Outlook" class="social-icon">
+    </a>
+    <a href="https://linkedin.com/in/vinithra-sadras-2a3a4421b" target="_blank">
+        <img src="{{ url_for('static', filename='images/linkedin.jpg') }}" alt="LinkedIn" class="social-icon">
+    </a>
+    <a href="https://github.com/Vinithra5" target="_blank">
+        <img src="{{ url_for('static', filename='images/github.jpg') }}" alt="GitHub" class="social-icon">
+    </a>
+</div>
+</section>
+
+    <!-- Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
